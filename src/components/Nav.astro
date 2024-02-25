@@ -1,0 +1,15 @@
+---
+const menus = [{title:'home',href :'/'}, {title:'shop',href:'/shop'} ,{title:'about',href:'/about'} ,{title:'contact',href:'/contact'}]
+
+import { Image } from "astro:assets"
+import img from "/public/images/logo.svg"
+---
+
+
+
+<div class="flex gap-5 justify-between w-[400px] ml-5 mt-5">
+    <Image src={img} alt="logo"/>
+    <ul class="flex gap-5 text-white font-semibold">
+        {menus.map((menu)=><li><a href={menu.href} class="hover:border-b-2 hover:border-white pb-2">{menu.title}</a></li>)}
+    </ul>
+</div>

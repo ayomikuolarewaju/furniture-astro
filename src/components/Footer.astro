@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets"
+import img1 from "/public/images/image-about-dark.jpg"
+import img2 from "/public/images/image-about-light.jpg"
+---
+
+
+
+
+<div class="flex z-50 w-screen">
+        
+        <div class="w-[400px]">
+            <Image src={img1} alt="dark" width={400} height={400}/>
+        </div>
+        <div class="flex-1 w-[800px] flex flex-col justify-start ml-[150px] mt-[20px] gap-5">
+             <h3 class="text-3xl font-bold">About our furniture</h3>
+             <p class="w-[500px] text-sm">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+        </div>
+        <div class="w-[400px]">
+            <Image src={img2} alt="light" width={400} height={400} />
+        </div>
+    
+</div>
