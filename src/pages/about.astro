@@ -1,6 +1,7 @@
 ---
 import Mainlayout from "../layouts/Mainlayout.astro"
 import Nav from "../components/Nav.astro"
+import Sidebar from "../components/Sidebar.astro"
 ---
 
 <Mainlayout title="Room Home | We are available all across the globe">
@@ -8,14 +9,9 @@ import Nav from "../components/Nav.astro"
 		<div class="bg-[url('/public/images/farmhouse.jpg')] flex-1 w-[1000px] h-[500px] bg-no-repeat">
 			<Nav/>
 		</div>
-		<div class="w-[400px] h-[500px] flex flex-col justify-start ml-[100px] mt-[100px] gap-5">
-    
-            <h3 id="title" class="text-3xl font-bold w-[350px]">About our furniture</h3>
-            <p id="subtitle" class="text-sm">
-                Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.
-            </p>
-           
-        </div>
+        <div>
+            <Sidebar/>
+          </div>
 		
 	</div>
 </Mainlayout>
